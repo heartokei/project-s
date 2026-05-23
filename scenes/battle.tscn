@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://beu4td8ma5ol0"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7dm0k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0xm2m"]
+
+[node name="Node3D" type="Node3D" unique_id=1414267381]
+
+[node name="UI" type="MultiMeshInstance3D" parent="." unique_id=1373687064]
+transform = Transform3D(-6.580358, 0, 0, 0, 0, -0.85105985, 0, 1.6999999, 0, -0.021893978, -0.6494472, 2.9476218)
+
+[node name="Attack UI" type="MeshInstance3D" parent="UI" unique_id=1075011482]
+transform = Transform3D(1.1672877, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.16935349, -0.42845193)
+mesh = SubResource("PlaneMesh_7dm0k")
+skeleton = NodePath("../..")
+
+[node name="Surfaces" type="MultiMeshInstance3D" parent="." unique_id=2035116335]
+transform = Transform3D(-4.077198, 0, 0, 0, 0, -2.6411207, 0, 1.6999999, 0, -0.021893978, 1.8736851, -1.308994)
+
+[node name="BG" type="MeshInstance3D" parent="Surfaces" unique_id=1991966799]
+transform = Transform3D(2.8934016, 0, 0, 0, 1, 0, 0, 0, 1.4591718, 0.0011331141, 0, 0)
+mesh = SubResource("PlaneMesh_7dm0k")
+skeleton = NodePath("../..")
+
+[node name="Floor" type="MeshInstance3D" parent="Surfaces" unique_id=1971700829]
+transform = Transform3D(-4.5096126, -0.00067969883, -0.0001588661, -0.0021098729, 0.0061994623, 2.2931566, 0.019182691, -0.3805145, 0.015479515, -0.011215096, 1.1808195, 0.54962605)
+mesh = SubResource("BoxMesh_ig7tw")
+skeleton = NodePath("../..")
+
+[node name="MainParty" type="MultiMeshInstance3D" parent="." unique_id=1633999969]
+transform = Transform3D(0.6469101, 0, 0, 0, 0.68986416, 0, 0, 0, 1, -1.2562401, 1.1886606, 1.3389511)
+
+[node name="Gabriela" type="MeshInstance3D" parent="MainParty" unique_id=81044614]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 0, 0.6117976, 0)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="NPC 2" type="MeshInstance3D" parent="MainParty" unique_id=935512932]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -1.2409506, 0.5790179, -0.533551)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="NPC 3" type="MeshInstance3D" parent="MainParty" unique_id=439853551]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -2.434678, 0.57901716, -0.9109622)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="NPC 4" type="MeshInstance3D" parent="MainParty" unique_id=2098881994]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -3.6951041, 0.57901716, -1.4191383)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="EnemyParty" type="MultiMeshInstance3D" parent="." unique_id=774181904]
+
+[node name="ENPC 4" type="MeshInstance3D" parent="EnemyParty" unique_id=310328989]
+transform = Transform3D(0.6469101, 0, 0, 0, 0.68986416, 0, 0, 0, 1, 3.5875847, 1.6110572, -0.08)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="ENPC 3" type="MeshInstance3D" parent="EnemyParty" unique_id=303784867]
+transform = Transform3D(0.6469101, 0, 0, 0, 0.68986416, 0, 0, 0, 1, 2.7845845, 1.5880572, 0.428)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="ENPC 2" type="MeshInstance3D" parent="EnemyParty" unique_id=1550182174]
+transform = Transform3D(0.6469101, 0, 0, 0, 0.68986416, 0, 0, 0, 1, 2.0125847, 1.5880572, 0.805)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="ENPC 1" type="MeshInstance3D" parent="EnemyParty" unique_id=1747316013]
+transform = Transform3D(0.6469101, 0, 0, 0, 0.68986416, 0, 0, 0, 1, 1.1975846, 1.5880572, 1.339)
+mesh = SubResource("CapsuleMesh_0xm2m")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1686672978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9959197, 7.633357)
+keep_aspect = 0

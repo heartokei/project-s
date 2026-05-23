@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dgl1a06artdbp"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dueok"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dueok"]
+
+[node name="Node3D" type="Node3D" unique_id=1460098225]
+
+[node name="Map" type="MeshInstance3D" parent="." unique_id=638661671]
+transform = Transform3D(9.158258, 0, 0, 0, 0.9629005, 0, 0, 0, 7.289153, -0.018275976, 0.118798494, -6.817003)
+mesh = SubResource("PlaneMesh_dueok")
+
+[node name="Table" type="MeshInstance3D" parent="." unique_id=523605169]
+transform = Transform3D(25.643126, 0, 0, 0, 1.829511, 0, 0, 0, 13.849392, -0.018275976, -0.10945058, -6.817003)
+mesh = SubResource("PlaneMesh_dueok")
+
+[node name="Task" type="MeshInstance3D" parent="." unique_id=545885096]
+transform = Transform3D(1.8131517, 0, 0, 0, 0.9629005, -2.842171e-14, 0, -3.5527137e-15, 7.2891526, 7.2046576, 0.389539, -6.817003)
+mesh = SubResource("PlaneMesh_dueok")
+
+[node name="Compass" type="MeshInstance3D" parent="." unique_id=1076628460]
+transform = Transform3D(4.3969765, 0, 0, 0, 0.13794123, 1.4210855e-14, 0, 0, 4.415513, -6.7864933, 0.2649784, -11.047462)
+mesh = SubResource("CylinderMesh_dueok")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1113282829]
+transform = Transform3D(1, 0, 0, 0, 0.07342976, 0.9973004, 0, -0.9973004, 0.07342976, 0, 14, -7)
